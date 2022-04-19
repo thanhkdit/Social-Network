@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <form id="form" action="#">
+    <input type="text" name="title" id="title">
+    <input type="submit" id="submit">
+  </form>
+  <script>
+    var form = document.getElementById('form')
+    form.addEventListener('submit', function(e) {
+      e.preventDefault()
+      var input = document.getElementById('title').value
+      console.log(input)
+    })
+  </script>
+</body>
+</html>
